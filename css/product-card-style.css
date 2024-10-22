@@ -1,0 +1,135 @@
+/* Import for Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* Variables for Color */
+    --black-Clr: rgb(0, 0, 0);
+    --white-Clr: rgb(255, 255, 255);
+    --red-Clr: rgb(255, 0, 0);
+    --beige-Clr: rgb(211, 197, 162);
+    --lightGrey-Clr: rgb(183, 183, 183);
+}
+/* Style for Body */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: var(--black-Clr);
+}
+/* Style for product page */
+.product-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 500px;
+    margin-top: 120px;
+}
+/* Style for product image container */
+.product-card .left-img-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Stlye for prodcut image */
+.product-card .left-img-col img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+/* Style for Text section */
+.product-card .right-info-col{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background: var(--white-Clr);
+    padding: 20px;
+}
+/* Style for product heading */
+.product-card .right-info-col h3{
+    color: var(--black-Clr);
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/* Style for product subheading */
+.product-card .right-info-col h5{
+    color: var(--lightGrey-Clr);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/* Style for product description */
+.product-card .right-info-col p{
+    color: var(--black-Clr);
+    font-size: 14px;
+    line-height: 1.25;
+    padding-left: 50px;
+}
+/* Style for available colors container */
+.product-card .right-info-col .available-colors{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 30px;
+}
+/* Style for available colors text */
+.product-card .right-info-col .available-colors span{
+    color: var(--black-Clr);
+    font-size: 14px;
+    margin-right: 20px;
+}
+/* Style for black color */
+.product-card .right-info-col .available-colors .black-color-container{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--black-Clr);
+     margin-right: 20px;
+}
+/* Style for red color */
+.product-card .right-info-col .available-colors .red-color-container{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--red-Clr);
+    margin-right: 20px;
+}
+/* Style for beige color */
+.product-card .right-info-col .available-colors .white-color-container{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--beige-Clr);
+}
+/* Style for price container */
+.product-card .right-info-col .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+}
+/* Stlye for price text */
+.product-card .right-info-col .price h4{
+    color: var(--black-Clr);
+    font-size: 24px;
+}
+/* Style for buy button */
+.product-card .right-info-col .price .buy-btn{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white-Clr);
+    background: var(--black-Clr);
+    border: none;
+    border-radius: 15px;
+}
